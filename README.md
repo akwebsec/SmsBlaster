@@ -15,15 +15,18 @@ Sms Blaster - By Ali Khan ( AKWebSec )
 
 --------------------------------------------------------
 1) এই সফটওয়্যার টা চালাতে শুধুমাত্র এই কমান্ড গুলো টার্মিনালে টাইপ করুন
+2) এই সফটওয়্যার টা চালাতে অবশ্যই আপনার সিস্টেমে পাইথন 3 ইনস্টল করা থাকতে হবে
 ```
+$ apt-get install python git -y
 $ git clone https://github.com/akwebsec/SmsBlaster.git 
 $ cd SmsBlaster/ 
-$ chmod +x ./aksmsbluster
-$ ./aksmsbluster
+$ chmod +x ./installer.sh && bash ./installer.sh
+$ chmod +x ./aksmsbluster.py
+$ python3 ./aksmsbluster.py
 ```
 --------------------------------------------------------
 
-2) যারা উইন্ডোজ ব্যবহার করে থাকেন তারা কিভাবে চালাবেন |
+3) যারা উইন্ডোজ ব্যবহার করে থাকেন তারা কিভাবে চালাবেন |
 --------------------------------------------------------
 1) প্রথমত এই ওয়েবসাইট থেকে গিট টা ডাউনলোড করে নিন https://git-scm.com/downloads
 2) ডাউনলোড করার পর অন্যান্য সফটওয়্যার এর মত এই সফটওয়্যার টি ও ইন্সটল করে নিন
@@ -35,8 +38,8 @@ $ ./aksmsbluster
 ```
 $ git clone https://github.com/akwebsec/SmsBlaster.git 
 $ cd SmsBlaster/ 
-$ chmod +x ./aksmsbluster
-$ ./aksmsbluster
+$ chmod +x ./aksmsbluster.py
+$ python3 ./aksmsbluster.py
 ```
 --------------------------------------------------------
 
