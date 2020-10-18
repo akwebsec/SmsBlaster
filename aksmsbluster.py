@@ -50,17 +50,17 @@ def print_logo():
         | FACEBOOK.COM/    #(/(((*****LOVE,*****/**/..          |      
         |  akwebsec.tk     #((*#/*/**INFO**,**,*,(/(            |     
         |                 (#(( #/(***019++8009** #(((           |     
-        |    LIKE         (((( /(///*******SEX** ##(/           |     
-        |    DILE        #((# #////**GF******** %#((            |    
+        |    LIKE         (((( /(///*******SEC** ##(/           |     
+        |    DILE        #((# #////**RR******** %#((            |    
         |    TO           #((/,//////***DEAD****.%#((           |     
         |    TAKA         %(# ///ALI//KHAN/******##((           |     
         |    LAGE         %(# (////////*/*///*****#(            |     
         |    NA           %(  (///ART//////////**%((            |  
         |                %(( (/////////SHANTO**/&(((            |    
         |                 %((, @@@@CODING@@@@@@%((((            |     
-        |   GITHUB/       ((&# @@@@@@@0MAL0@@@@(@((/            |     
+        |   GITHUB/       ((&# @@@@@@@000000@@@@(@((/           |     
         |  AKWeBSeC             &&&&@@@ || @@@@@@##&            |       
-        | I NEED AKTA PREMIKA   &%%&@@@ || @@@@&%%&             |    
+        |                       &%%&@@@ || @@@@&%%&             |    
         |                               ||                      |
         |||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 """
@@ -323,7 +323,7 @@ elif str(3) in account:
 
 elif str(4) in account:
     print(random.choice(
-        colorlist) + "\n\n --> AMI ALI KHAN AMI AKJON BUG BOUNTY HUNTER AMAR 16 BOSOR . AMI AKJON COMPUTER SCEINCE STUDENT \nABON AMI AKJON SOFTWARE DEVELOPER AMI DIRGHO 3 BOSORERO BESHI SHOMOY DHORE \nWEB APPICATION DESKTOP APPLICATION ER SOFTWARE \nTOIRI KORE ASHCHI > AMI MULOTO CYBER SECURITY NIA KAJ KORE THAKI > AMI AI SOFTWARE TA BANGLAI LAKHAR \nKARON HOCCHE ONEKE AMAKE REQUEST KORECHILO TAI KEO ABAR ATA NIA MOJA NIBEN NA PLEASE > AR AMAR JONNO DUA \nKORBEN ABON NOTUN NOTUN SOFTWARE PETE AMAR FACEBOOK PAGE TI LIKE \nDITE VULBEN NA INSHAALLAH OK SHOBAI VALO THAKBEN AR AKTA KOTHA AKTA MEYE\n KHUJTASI BIA KORTE CHAI KEO PARLE HELP KORUN PLEASE .HE HE HE  <-- ")
+        colorlist) + "\n\n --> AMI ALI KHAN AMI AKJON BUG BOUNTY HUNTER AMAR 16 BOSOR . AMI AKJON COMPUTER SCEINCE STUDENT \nABON AMI AKJON SOFTWARE DEVELOPER AMI DIRGHO 3 BOSORERO BESHI SHOMOY DHORE \nWEB APPICATION DESKTOP APPLICATION ER SOFTWARE \nTOIRI KORE ASHCHI > AMI MULOTO CYBER SECURITY NIA KAJ KORE THAKI > AMI AI SOFTWARE TA BANGLAI LAKHAR \nKARON HOCCHE ONEKE AMAKE REQUEST KORECHILO TAI KEO ABAR ATA NIA MOJA NIBEN NA PLEASE > AR AMAR JONNO DUA \nKORBEN ABON NOTUN NOTUN SOFTWARE PETE AMAR FACEBOOK PAGE TI LIKE \nDITE VULBEN NA INSHAALLAH OK SHOBAI VALO THAKBEN <-- ")
 
 elif str(5) in account:
     print(random.choice(colorlist) + "\nAMAR SOFTWARE TA BEBOHAR KORAR JONNO DHONNOBAT ")
